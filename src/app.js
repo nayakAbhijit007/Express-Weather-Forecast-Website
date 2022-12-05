@@ -23,7 +23,7 @@ app.get("/about", (req,res)=>{
 
 app.get("*", (req,res)=>{
     res.render("404error")
-})
+});
 
 app.listen(port,()=>{
     console.log(`Listening to the port ${port}`)
